@@ -26,7 +26,7 @@ nav .container {
 }
 
 nav .menuBtn {
-  background-image: url(/assets/menu.png);
+  background-image: url(../assets/menu.png);
   height: 45px;
   width: 45px;
   background-size: 25px;
@@ -37,7 +37,7 @@ nav .menuBtn {
 }
 
 nav .menuBtn.active {
-  background-image: url(/assets/close.png);
+  background-image: url(../assets/close.png);
   height: 45px;
   width: 45px;
   background-size: 25px;
