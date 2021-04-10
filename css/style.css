@@ -54,8 +54,8 @@ nav.shrink {
 }
 
 .homeSection {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.7))), url(/assets/banner.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(/assets/banner.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.7))), url(../assets/banner.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(../assets/banner.jpg);
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -309,7 +309,7 @@ nav.shrink {
 .whyUs .bg2 {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  background-image: url(/assets/bg-2.jpg);
+  background-image: url(../assets/bg-2.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -350,7 +350,7 @@ nav.shrink {
 .vision .bg3 {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  background-image: url(/assets/bg-1.jpg);
+  background-image: url(../assets/bg-1.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -484,8 +484,8 @@ nav.shrink {
 .product .bg-product {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url(/assets/bg-4.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(/assets/bg-4.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url(../assets/bg-4.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../assets/bg-4.jpg);
   background-size: cover;
   background-image: center;
   background-repeat: no-repeat;
