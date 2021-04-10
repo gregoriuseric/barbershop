@@ -1,0 +1,40 @@
+footer {
+  height: 150px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer {
+  width: 60%;
+  text-align: center;
+  p {
+    color: white;
+    font-weight: 200;
+    font-size: 1.1em;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
+
+.social-icon {
+  ul {
+    display: flex;
+
+    li {
+      list-style: none;
+      padding: 0 1rem;
+    }
+  }
+  .icon {
+    color: white;
+    font-size: 2rem;
+    transition: 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+@import "_home";
+@import "_why_us";
+@import "_vision";
+@import "_product";
+@import "_footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #eee;
+  font-family: "Poppins", sans-serif;
+}

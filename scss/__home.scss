@@ -1,0 +1,190 @@
+nav {
+  position: fixed;
+  top: 3%;
+  left: 0;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  z-index: 5;
+  transition: 0.5s ease;
+
+  .container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menuBtn {
+    background-image: url(/assets/menu.png);
+    height: 45px;
+    width: 45px;
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 6;
+
+    &.active {
+      background-image: url(/assets/close.png);
+      height: 45px;
+      width: 45px;
+      background-size: 25px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+  &.shrink {
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    height: 10vh;
+    top: 0;
+  }
+}
+
+.homeSection {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(/assets/banner.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  text-align: center;
+
+  h2 {
+    font-family: "Kaushan Script", cursive;
+    font-size: 5.5em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 700;
+    line-height: 1.2em;
+    padding-bottom: 1rem;
+    color: white;
+  }
+
+  h3 {
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  p {
+    color: white;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    font-weight: 300;
+    padding-bottom: 1.5em;
+  }
+
+  .btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+    font-size: 1.1em;
+    width: 150px;
+    padding: 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: black;
+    border-radius: 4px;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+    transition: 0.5s ease;
+    position: relative;
+    z-index: 1;
+    transition: 0.3s ease;
+  }
+
+  .btn:hover {
+    color: white;
+    letter-spacing: 4px;
+    transform: scale(1.1);
+  }
+
+  a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: salmon;
+    z-index: 11;
+    border-radius: 4px;
+    transform: scale(0);
+    transition: 0.3s ease;
+    z-index: -1;
+  }
+
+  a:hover span {
+    transform: scale(1);
+  }
+}
+.sideNav {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 3;
+  backdrop-filter: blur(5px);
+  transition: 0.5s ease;
+  z-index: 3;
+
+  &.active {
+    right: 0;
+  }
+
+  ul li {
+    list-style: none;
+    padding-bottom: 3em;
+    padding-left: 2em;
+  }
+
+  ul li:first-child {
+    padding-top: 8em;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 1.1em;
+    font-weight: 600;
+    position: relative;
+  }
+
+  a::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    transition: 0.3s ease;
+    transform: scale(0);
+  }
+
+  a:hover::before {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .homeSection {
+    h2 {
+      font-size: 3.5em;
+    }
+
+    h3 {
+      font-size: 1.1em;
+    }
+
+    p {
+      font-size: 0.9em;
+    }
+  }
+}
